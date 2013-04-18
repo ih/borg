@@ -1,0 +1,7 @@
+* Journal
+** <2013-04-18 Thu 08:56>
+Setting up VNC on the PI so it's easier to get going
+
+http://gettingstartedwithraspberrypi.tumblr.com/post/24142374137/setting-up-a-vnc-server
+
+VNC working
