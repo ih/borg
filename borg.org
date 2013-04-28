@@ -1,4 +1,12 @@
 * Journal
+** <2013-04-28 Sun 14:11>
+Setting up a connection between mindwave and raspberry pi using  http://docs.python.org/2/library/socketserver.html 
+** <2013-04-27 Sat 12:04>
+Seems like sdl_viewer.py is not picking up the mindwave signal.  trying to find if the usb port is, but if that doesn't work can try different python library https://github.com/BarkleyUS/mindwave-python
+
+lsusb can be used to list usb devices ir looka likw mindwave is Bus 001 Device 005
+
+No real luck getting the mindwave to connect directly to the raspberry pi using mindwave-python or python-mindwave.  Put up a question on Stackoverflow, but doubtful of responses.  The next approach will be to set up a simple communication link between the computer the mindwave works with and the raspberry pi using socketserver (http://docs.python.org/2/library/socketserver.html)
 ** <2013-04-18 Thu 08:56>
 Setting up VNC on the PI so it's easier to get going
 
