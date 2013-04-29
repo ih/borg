@@ -10,7 +10,9 @@ Next step print attention/meditation values on the main computer, will try to st
 There's a problem where if sock.sendall() is run in a loop a Broken pipe error comes up.  The solution may be on the serverside to keep listening to the connection
 http://stackoverflow.com/questions/6237569/python-socket-send-can-only-send-once-then-socket-error-errno-32-broken-pi
 
+Worked!  Can now send mindwave data to the raspberry pi.
 
+The next step is to modify the pi server to use the mindwave data with the breadboard.
 
 ** <2013-04-27 Sat 12:04>
 Seems like sdl_viewer.py is not picking up the mindwave signal.  trying to find if the usb port is, but if that doesn't work can try different python library https://github.com/BarkleyUS/mindwave-python
