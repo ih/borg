@@ -1,6 +1,17 @@
 * Journal
+
 ** <2013-04-28 Sun 14:11>
 Setting up a connection between mindwave and raspberry pi using  http://docs.python.org/2/library/socketserver.html 
+
+connection between mindwave computer and raspberry pi made, just needed to set the HOST to be the raspberry pi ip address
+
+Next step print attention/meditation values on the main computer, will try to start with mindwave-python because of the event handler style and also recency of development. (perhaps compare python-mindwave to mindwave-python)
+
+There's a problem where if sock.sendall() is run in a loop a Broken pipe error comes up.  The solution may be on the serverside to keep listening to the connection
+http://stackoverflow.com/questions/6237569/python-socket-send-can-only-send-once-then-socket-error-errno-32-broken-pi
+
+
+
 ** <2013-04-27 Sat 12:04>
 Seems like sdl_viewer.py is not picking up the mindwave signal.  trying to find if the usb port is, but if that doesn't work can try different python library https://github.com/BarkleyUS/mindwave-python
 
