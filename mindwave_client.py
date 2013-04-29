@@ -34,9 +34,9 @@ def connect_to_pi():
 def send_data(sock):
     try:
         # Connect to server and send data
-        for i in range(1000):
-            print i
-            data = 'attention:%s meditation:%s' % (headset.attention,
+        while True:
+            #print i
+            data = '%s,%s' % (headset.attention,
                                                    headset.meditation)
             sock.sendall(data + "\n")
             #print data
