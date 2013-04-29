@@ -39,7 +39,8 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
             self.request.sendall(self.data.upper())
             if self.data != '':
                 self.data = self.request.recv(1024).strip()
-
+        GPIO.output(GREEN_LED, False)
+        GPIO.output(RED_LED, False)
 
 
 def initialize_gpio():
